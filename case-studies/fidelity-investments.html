@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark-mode');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fidelity Investments - Shichi Upadhyay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body class="cs-page">
+
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand"><a href="../index.html">Shichi Upadhyay</a></div>
+      <nav class="nav-links" id="nav-links">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. HERO -->
+  <section class="cs-hero">
+    <div class="wrap">
+      <a href="../index.html#work" class="cs-back">← All work</a>
+      <span class="mono cs-eyebrow">UX DESIGN · WEALTH MANAGEMENT · INTERN</span>
+      <h1>Fidelity Investments</h1>
+      <p class="cs-lede">
+        UX Design Intern on Portfolio M.R.I., a portfolio analysis and
+        optimization tool for internal portfolio managers. The work covered
+        the optimization workflow, the simulation and risk visualizations,
+        and a concept redesign of the brokerage dashboard.
+      </p>
+
+      <dl class="cs-facts">
+        <div><dt>Role</dt><dd>UX Design Intern</dd></div>
+        <div><dt>Client</dt><dd>Fidelity Investments</dd></div>
+        <div><dt>Focus</dt><dd>Portfolio analysis workflows and data visualization</dd></div>
+        <div><dt>Scope</dt><dd>Interaction design, data visualization, dashboard concept</dd></div>
+      </dl>
+    </div>
+
+    <figure class="cs-figure cs-figure-wide">
+      <div class="cs-media"><img src="../assets/images/fidelity/brokerage-dashboard-concept.jpg" alt="Portfolio M.R.I. and the Premium Brokerage dashboard concept, showing both the sidebar and top-tab navigation models"></div>
+      <figcaption class="wrap">Portfolio M.R.I. and the Premium Brokerage dashboard concept.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2. PROBLEM -->
+  <section class="cs-section" id="problem" data-rail="The problem">
+    <div class="wrap">
+      <div class="shead"><h2>The problem</h2><span class="rule"></span><span class="mono">01</span></div>
+      <div class="cs-body">
+        <p>Portfolio M.R.I. let managers upload a portfolio, set optimization
+        constraints, and see the resulting risk and return distribution.
+        Everything was on one screen at once: instrument table, four metric
+        cards, a simulation histogram, an optimization panel, and a scenario
+        panel.</p>
+
+        <p>The screen was dense because the task is dense - a portfolio
+        manager genuinely needs all of it. But nothing was prioritized.
+        Optimization controls sat at the same visual weight as the results
+        they produced, so it wasn't obvious which panel you were meant to act
+        in and which one you were meant to read.</p>
+      </div>
+
+      <figure class="cs-figure">
+        <div class="cs-media"><img src="../assets/images/fidelity/workspace-overview.jpg" alt="Portfolio M.R.I. workspace showing the instrument table, metric cards, simulation histogram, optimization panel and scenario panel"></div>
+        <figcaption>Portfolio M.R.I. - instrument table, metric cards, simulation histogram, optimization panel, scenario panel.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. KEY DECISIONS -->
+  <section class="cs-section" id="decisions" data-rail="Key decisions">
+    <div class="wrap">
+      <div class="shead"><h2>Key decisions</h2><span class="rule"></span><span class="mono">02</span></div>
+
+      <div class="cs-decisions">
+
+        <article class="cs-decision">
+          <span class="mono">Decision 01</span>
+          <h3>Progressive disclosure on the optimization panel</h3>
+          <p class="cs-tension"><strong>The tension:</strong> Max Allocation
+          and Loss Tolerance are the two controls that change everything
+          downstream, but they were buried in a collapsed accordion at the
+          bottom of the page, below the fold.</p>
+
+          <p>I made the optimization panel expand in place with the controls
+          laid out horizontally - method and drawdown on the left, the two
+          sliders taking the full width beside them. Optimize and Update sit
+          at the end of the control flow rather than floating separately, so
+          the sequence reads left to right: choose method, set constraints,
+          run.</p>
+
+          <figure class="cs-figure cs-media-native">
+            <div class="cs-media"><img src="../assets/images/fidelity/optimization-panel.jpg" alt="Optimization panel expanded in place, with Optimization Method, Max Allocation and Loss Tolerance sliders, and Optimize / Update controls"></div>
+            <figcaption>Optimization panel, expanded state - method, drawdown, Max Allocation and Loss Tolerance sliders, Optimize / Update.</figcaption>
+          </figure>
+        </article>
+
+        <article class="cs-decision">
+          <span class="mono">Decision 02</span>
+          <h3>Two views of the same risk data</h3>
+          <p class="cs-tension"><strong>The tension:</strong> Default
+          probability across 30-odd positions is a proportion question and a
+          ranking question at once. One chart can't do both well.</p>
+
+          <p>I built the same data as a treemap and a donut. The treemap
+          answers which positions carry the most risk, because area encodes
+          magnitude directly. The donut answers how risk is distributed,
+          because the eye reads a circle as a whole. Both use one green
+          scale, and hovering either surfaces the same tooltip - asset ID and
+          probability.</p>
+
+          <figure class="cs-figure">
+            <div class="cs-media">Screen - risk treemap and donut, shared tooltip</div>
+            <figcaption>Placeholder - treemap and donut views of default probability, one green scale.</figcaption>
+          </figure>
+        </article>
+
+        <article class="cs-decision">
+          <span class="mono">Decision 03</span>
+          <h3>Original versus proposed as an overlay, not a toggle</h3>
+          <p class="cs-tension"><strong>The tension:</strong> The point of
+          optimizing is the difference between where you are and where you'd
+          be. A toggle makes the user hold one state in memory to compare it
+          to the other.</p>
+
+          <p>Original and proposed render in the same histogram, green and
+          amber, with a shared legend. The comparison is spatial rather than
+          remembered. The hover tooltip returns the exact range, frequency,
+          and default probability rather than only the bucket.</p>
+
+          <figure class="cs-figure cs-media-native">
+            <div class="cs-media"><img src="../assets/images/fidelity/histogram-overlay.jpg" alt="Original and proposed distributions overlaid in one histogram with a shared Original/Proposed legend"></div>
+            <figcaption>Original vs. proposed histogram overlay, with shared legend and range tooltip.</figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ALSO AT FIDELITY -->
+  <section class="cs-section" id="also" data-rail="Also at Fidelity">
+    <div class="wrap">
+      <div class="shead"><h2>Also at Fidelity</h2><span class="rule"></span><span class="mono">03</span></div>
+
+      <div class="cs-also">
+
+        <article class="cs-also-card">
+          <span class="mono">Concept design</span>
+          <h3>Premium Brokerage dashboard</h3>
+          <p>A redesign concept for the customer-facing brokerage view,
+          covering the sidebar-to-tab navigation shift, order analytics,
+          earnings breakdown, and the order list. Explored two navigation
+          models: a persistent left sidebar with a collapsed icon rail, and a
+          top tab bar for Market Scenario, Investment Universe, Adjust
+          Exposure, and Optimization.</p>
+          <span class="cs-also-stat">2 navigation models</span>
+        </article>
+
+        <article class="cs-also-card">
+          <span class="mono">Interaction design</span>
+          <h3>Scenario controls</h3>
+          <p>VIX and SP500 range sliders with paired numeric inputs, so a
+          manager can set a scenario by dragging or by typing an exact
+          value.</p>
+          <span class="cs-also-stat">Dual input</span>
+        </article>
+
+      </div>
+
+      <figure class="cs-figure cs-media-native">
+        <div class="cs-media"><img src="../assets/images/fidelity/scenario-controls.jpg" alt="VIX and SP500 range sliders with paired numeric inputs"></div>
+        <figcaption>Scenario controls - VIX and SP500 range sliders with paired numeric inputs.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. NEXT -->
+  <nav class="cs-next">
+    <div class="wrap">
+      <a href="private-equity-platforms.html" class="cs-next-link">
+        <span class="mono">Next case study</span>
+        <h3>Private Equity Platforms →</h3>
+      </a>
+    </div>
+  </nav>
+
+  <footer id="contact" class="cs-wash cs-wash-bottom" data-rail="Contact">
+    <div class="wrap">
+      <span class="mono">Get in touch</span>
+      <h2>Let's talk about what you're building.</h2>
+      <a href="mailto:shichi58@gmail.com" class="cta-btn">Email me →</a>
+      <div class="footer-links">
+        <a href="mailto:shichi58@gmail.com">shichi58@gmail.com</a>
+        <a href="https://linkedin.com/in/shichi-upadhyay" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Shichi58" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.32 9.32 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://twitter.com/NowKillingEve" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter
+        </a>
+        <a href="https://www.instagram.com/the_uncanny_necromancy/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>Shichi Upadhyay © 2026</span>
+        <span>Houston, TX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/scripts/main.js"></script>
+</body>
+</html>

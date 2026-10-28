@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark-mode');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shichi Upadhyay - Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+
+  <!-- 1. NAV -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand"><a href="#home">Shichi Upadhyay</a></div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<!-- 2. HERO -->
+<section id="home" class="hero-fig" data-rail="Top">
+  <div class="hero-canvas-frame">
+    <div class="hero-canvas">
+
+      <!-- left-side illustration -->
+      <img class="hc-illustration" src="assets/images/hero/chair-and-lamp.svg" alt="" aria-hidden="true">
+      <button type="button" class="hc-lamp-hit" aria-label="Toggle dark mode" aria-pressed="false"></button>
+      <span class="hc-cat" data-tooltip="Meow!">
+        <img src="assets/images/hero/cat.svg" alt="" aria-hidden="true">
+      </span>
+      <button type="button" class="hc-cassette-btn" aria-label="Play song" aria-pressed="false" data-tooltip="Click">
+        <img class="hc-cassette" src="assets/images/hero/cassette.svg" alt="" aria-hidden="true">
+      </button>
+      <img class="hc-onair" src="assets/images/hero/onAir.svg" alt="" aria-hidden="true">
+      <img class="hc-journal" src="assets/images/hero/open-journal.svg" alt="" aria-hidden="true">
+
+      <!-- profile photos -->
+      <span class="hc-photo-a" data-tooltip="Shenandoah National Park">
+        <img src="assets/images/hero/Me2.svg" alt="Shichi Upadhyay" aria-hidden="true">
+      </span>
+      <span class="hc-photo hc-photo-b" data-tooltip="Tatte Bakery &amp; Cafe, Cambridge">
+        <img src="assets/images/hero/Me1.png" alt="Shichi Upadhyay" aria-hidden="true">
+      </span>
+
+      <!-- headline -->
+      <div class="hc-text">
+        <span class="hc-line-sm">Welcome to</span>
+        <span class="hc-line-lg">SHICHI</span>
+        <span class="hc-line-lg">UPADHYAY&rsquo;S</span>
+        <span class="hc-line-sm">World of Aha!</span>
+      </div>
+
+      <!-- social links -->
+      <div class="hc-socials">
+        <a href="https://linkedin.com/in/shichi-upadhyay" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Shichi58" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.32 9.32 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+        <a href="https://twitter.com/NowKillingEve" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/the_uncanny_necromancy/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+
+      <!-- journal / desk mode toggle -->
+      <button class="hc-mode-btn hc-mode-journal" type="button" aria-label="Journal mode" aria-pressed="false" data-tooltip="Journal View">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25 21V7C11.25 6.58579 11.5858 6.25 12 6.25C12.4142 6.25 12.75 6.58579 12.75 7V21C12.75 21.4142 12.4142 21.75 12 21.75C11.5858 21.75 11.25 21.4142 11.25 21Z" fill="currentColor"/>
+<path d="M21.25 4C21.25 3.93369 21.2236 3.87013 21.1768 3.82324C21.1299 3.77636 21.0663 3.75 21 3.75H16C15.138 3.75 14.3116 4.09266 13.7021 4.70215C13.0927 5.31164 12.75 6.13805 12.75 7C12.75 7.41421 12.4142 7.75 12 7.75C11.5858 7.75 11.25 7.41421 11.25 7C11.25 6.13805 10.9073 5.31164 10.2979 4.70215C9.68836 4.09266 8.86195 3.75 8 3.75H3C2.9337 3.75 2.87013 3.77636 2.82324 3.82324C2.77636 3.87013 2.75 3.9337 2.75 4V17C2.75 17.0663 2.77636 17.1299 2.82324 17.1768C2.87013 17.2236 2.93369 17.25 3 17.25H9C9.99456 17.25 10.9481 17.6454 11.6514 18.3486C11.7778 18.475 11.894 18.6096 12 18.751C12.106 18.6096 12.2222 18.475 12.3486 18.3486C13.0519 17.6454 14.0054 17.25 15 17.25H21C21.0663 17.25 21.1299 17.2236 21.1768 17.1768C21.2236 17.1299 21.25 17.0663 21.25 17V4ZM22.75 17C22.75 17.4641 22.5655 17.9091 22.2373 18.2373C21.9091 18.5655 21.4641 18.75 21 18.75H15C14.4033 18.75 13.8311 18.9872 13.4092 19.4092C12.9872 19.8311 12.75 20.4033 12.75 21C12.75 21.4142 12.4142 21.75 12 21.75C11.5858 21.75 11.25 21.4142 11.25 21C11.25 20.4033 11.0128 19.8311 10.5908 19.4092C10.1689 18.9872 9.59674 18.75 9 18.75H3C2.53587 18.75 2.09089 18.5655 1.7627 18.2373C1.43451 17.9091 1.25 17.4641 1.25 17V4C1.25 3.53587 1.43451 3.09088 1.7627 2.7627C2.09088 2.43451 2.53587 2.25 3 2.25H8C9.25978 2.25 10.4676 2.7508 11.3584 3.6416C11.6024 3.88557 11.8169 4.15334 12 4.43945C12.1831 4.15334 12.3976 3.88557 12.6416 3.6416C13.5324 2.7508 14.7402 2.25 16 2.25H21C21.4641 2.25 21.9091 2.43451 22.2373 2.7627C22.5655 3.09089 22.75 3.53587 22.75 4V17Z" fill="currentColor"/>
+</svg>
+      </button>
+      <button class="hc-mode-btn hc-mode-desk" type="button" aria-label="Desk mode" aria-pressed="true" data-tooltip="Desk View">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.0002 1.25021C11.4642 1.25027 11.9094 1.43488 12.2375 1.76291L14.5774 4.10275L20.3518 5.28537L20.467 5.31271C20.7323 5.38613 20.9769 5.52173 21.1809 5.70822C21.4141 5.92155 21.5852 6.19452 21.676 6.49728C21.7667 6.79996 21.7738 7.12156 21.6965 7.42795C21.6288 7.6962 21.499 7.94414 21.3176 8.15158L21.2375 8.23752L14.2375 15.2375C14.0142 15.4609 13.7342 15.6192 13.4279 15.6965C13.1216 15.7738 12.8 15.7667 12.4973 15.676C12.1945 15.5852 11.9215 15.4141 11.7082 15.1809C11.495 14.9477 11.3489 14.6613 11.2854 14.3518L10.1028 8.57736L7.76291 6.23752C7.43489 5.9094 7.25027 5.46417 7.25021 5.00021C7.25021 4.53618 7.43483 4.09108 7.76291 3.76291L9.76291 1.76291C10.0911 1.43483 10.5362 1.25021 11.0002 1.25021ZM8.75021 5.00021C8.75027 5.06643 8.77664 5.13014 8.82346 5.17697L11.3235 7.67697L11.3947 7.75998C11.4599 7.84768 11.5055 7.94896 11.5276 8.05685L12.7551 14.05L12.7766 14.1135C12.7868 14.1335 12.7994 14.1524 12.8147 14.1692C12.8451 14.2025 12.8847 14.2265 12.9279 14.2395C12.9712 14.2524 13.017 14.2534 13.0608 14.2424C13.1044 14.2314 13.1441 14.2088 13.176 14.177L20.177 7.17697C20.2088 7.1451 20.2314 7.10441 20.2424 7.06076C20.2534 7.01701 20.2524 6.97117 20.2395 6.92795C20.2265 6.8847 20.2025 6.84514 20.1692 6.81467C20.1359 6.78424 20.0942 6.76416 20.05 6.7551L14.0569 5.52756C13.913 5.49811 13.7808 5.42722 13.677 5.32346L11.177 2.82346C11.1301 2.77664 11.0664 2.75027 11.0002 2.75021C10.934 2.75021 10.8703 2.77664 10.8235 2.82346L8.82346 4.82346C8.77664 4.87033 8.75021 4.93396 8.75021 5.00021Z" fill="currentColor"/>
+<path d="M13.6768 4.26273C13.9697 3.96987 14.4445 3.96984 14.7373 4.26273C15.0302 4.55561 15.0302 5.03039 14.7373 5.32327L11.3233 8.73734C11.0304 9.03019 10.5556 9.03019 10.2627 8.73734C9.96984 8.44445 9.96986 7.96969 10.2627 7.67679L13.6768 4.26273Z" fill="currentColor"/>
+<path d="M10.25 20C10.25 19.6685 10.1182 19.3506 9.88379 19.1162C9.64937 18.8818 9.33152 18.75 9 18.75H5C4.66848 18.75 4.35063 18.8818 4.11621 19.1162C3.88179 19.3506 3.75 19.6685 3.75 20V21C3.75 21.0663 3.77636 21.1299 3.82324 21.1768C3.87013 21.2236 3.93369 21.25 4 21.25H10C10.0663 21.25 10.1299 21.2236 10.1768 21.1768C10.2236 21.1299 10.25 21.0663 10.25 21V20ZM11.75 21C11.75 21.4641 11.5655 21.9091 11.2373 22.2373C10.9091 22.5655 10.4641 22.75 10 22.75H4C3.53587 22.75 3.09089 22.5655 2.7627 22.2373C2.43451 21.9091 2.25 21.4641 2.25 21V20C2.25 19.2707 2.53994 18.5714 3.05566 18.0557C3.57139 17.5399 4.27065 17.25 5 17.25H9C9.72935 17.25 10.4286 17.5399 10.9443 18.0557C11.4601 18.5714 11.75 19.2707 11.75 20V21Z" fill="currentColor"/>
+<path d="M8.55531 5.96973C8.84814 5.6769 9.32295 5.67704 9.61586 5.96973C9.90875 6.26262 9.90875 6.73738 9.61586 7.03027L4.82289 11.8232C4.78523 11.8609 4.76067 11.9103 4.75258 11.9629C4.74457 12.0154 4.75341 12.0691 4.77797 12.1162L7.66469 17.6533C7.85619 18.0206 7.71362 18.4735 7.34633 18.665C6.9791 18.8563 6.52606 18.7139 6.33461 18.3467L3.44789 12.8096C3.27569 12.4793 3.21352 12.1025 3.27016 11.7344C3.32679 11.3664 3.49903 11.0259 3.76235 10.7627L8.55531 5.96973Z" fill="currentColor"/>
+</svg>
+      </button>
+
+      <!-- polaroid-style photo group -->
+      <span class="hc-group6" data-tooltip="Lake Tahoe">
+        <img src="assets/images/hero/coffee and croissant.svg" alt="Cuppa Tahoe" aria-hidden="true">
+      </span>
+
+    </div>
+  </div>
+</section>
+
+<script type="module" src="assets/scripts/main.js"></script>
+
+  <!-- 3. ABOUT -->
+<section id="about" class="about" data-rail="About Me">
+  <div class="wrap">
+    <div class="shead">
+      <h2>About Me</h2>
+      <span class="rule"></span>
+      <div class="toggle">
+        <button class="toggle-btn active" data-target="story">Story</button>
+        <button class="toggle-btn" data-target="tldr">TL;DR</button>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <p>
+        Aka Shichi (शिचि).
+      </p>
+      <p>
+        Product Designer with an <strong>M.S. in Human-Computer Interaction</strong>, currently
+        embedded full-time at <strong>a private equity firm</strong> as their sole Product
+        Designer<span class="strike"> - building systems, shipping products, and occasionally
+        writing front-end code</span>.
+      </p>
+      <p>
+        <span class="strike">In short, a chaos-born, curiosity-fueled designer who chases
+        stories as if they'd disappear.</span>
+      </p>
+      <p>
+        <span class="strike">She designs like she's painting whispers, observes like a
+        detective, and adds drama like a younger sibling with no chill.</span>
+        Currently decoding the human experience: pixel by pixel, story by story.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 4. SELECTED WORK -->
+<section id="work" class="work-section" data-rail="Selected Work">
+  <div class="wrap">
+    <div class="shead">
+      <h2>Selected Work</h2>
+      <span class="rule"></span>
+    </div>
+
+    <!-- Card 1: info left, image right -->
+    <div class="work-card">
+      <div class="work-info">
+        <div class="work-info-top">
+          <div class="work-eyebrow">
+            <span class="mono">Product Designer</span>
+            <span class="rule"></span>
+          </div>
+          <h3>A Private Equity Firm</h3>
+          <p>A design system built from zero as the sole designer on the systems side, then adopted across four internal platforms. Tokens, a 46-component library, iconography and brand foundations - plus the hands-on product design that consumes it.</p>
+        </div>
+        <div class="work-stats">
+          <span class="stat-rule"></span>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="n">46</span>
+              <span class="l">Components shipped</span>
+            </div>
+            <div class="stat">
+              <span class="n">4</span>
+              <span class="l">Teams adopted it</span>
+            </div>
+            <div class="stat">
+              <span class="n">0→1</span>
+              <span class="l">Design system</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-right">
+        <a href="case-studies/private-equity-platforms.html" class="work-image pep-photo">
+          <img src="assets/images/work/privateequityplatforms.jpg" alt="Design system component library, illustrated">
+        </a>
+        <a href="case-studies/private-equity-platforms.html" class="view-btn">
+          <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+          View Case Study <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4: image left, info right -->
+    <div class="work-card reverse">
+      <div class="work-info">
+        <div class="work-info-top">
+          <div class="work-eyebrow">
+            <span class="mono">Product Designer Intern</span>
+            <span class="rule"></span>
+          </div>
+          <h3>DeepVue</h3>
+          <p>Designed a mobile trading experience where haptic and pressure-based interactions stand in for physical feedback - so traders can act on a watchlist by feel, not just by looking. Built 20+ WCAG 2.1 AA components alongside it, so the interface holds up when touch isn't an option.</p>
+        </div>
+        <div class="work-stats">
+          <span class="stat-rule"></span>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="n">20+</span>
+              <span class="l">WCAG components</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-right">
+        <a href="case-studies/deepvue.html" class="work-image">
+          <img src="assets/images/work/deepvue.png" alt="DeepVue trading platform interface">
+        </a>
+        <a href="case-studies/deepvue.html" class="view-btn">
+          View Case Study <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3: info left, image right -->
+    <div class="work-card">
+      <div class="work-info">
+        <div class="work-info-top">
+          <div class="work-eyebrow">
+            <span class="mono">UX Designer Intern</span>
+            <span class="rule"></span>
+          </div>
+          <h3>Fidelity Investments</h3>
+          <p>Designed data visualization modules for portfolio managers inside Fidelity's brokerage platform - dense position and performance data that had to stay scannable under time pressure. Iterative usability testing cut task time by 13%.</p>
+        </div>
+        <div class="work-stats">
+          <span class="stat-rule"></span>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="n">~13%</span>
+              <span class="l">Task efficiency gain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-right">
+        <a href="case-studies/fidelity-investments.html" class="work-image">
+          <img src="assets/images/work/fidelity.png" alt="Fidelity Investments risk analysis tool">
+        </a>
+        <a href="case-studies/fidelity-investments.html" class="view-btn">
+          View Case Study <span>→</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 7. FOOTER CTA -->
+  <footer id="contact" data-rail="Contact">
+    <div class="wrap">
+      <span class="mono">Get in touch</span>
+      <h2>Let's talk about what you're building.</h2>
+      <a href="mailto:shichi58@gmail.com" class="cta-btn">Email me →</a>
+      <div class="footer-links">
+        <a href="mailto:shichi58@gmail.com">shichi58@gmail.com</a>
+        <a href="https://linkedin.com/in/shichi-upadhyay" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Shichi58" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.32 9.32 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://twitter.com/NowKillingEve" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter
+        </a>
+        <a href="https://www.instagram.com/the_uncanny_necromancy/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>Shichi Upadhyay © 2026</span>
+        <span>Houston, TX</span>
+      </div>
+      <p class="footer-credits">Sound: "Loser" - Tame Impala (2025) &middot; Cassette click via <a href="https://youtu.be/GpIC6VX-nAg" target="_blank" rel="noopener">YouTube</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/scripts/main.js"></script>
+</body>
+</html>
